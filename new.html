@@ -1,0 +1,78 @@
+<html>
+<head>
+	<script>
+
+	</script>
+</head>
+
+<body>
+	<h1>Hello World</h1>
+
+	<p id="ChangeName">Parth</p>
+	<button type="button" onclick="a()">ChangeName</button><br><br>
+	
+	<a href="welcome.html">Welcome</a><br><br>
+
+	<p>Factorial Function Called....</p>
+	<p id="fact"></p>
+
+	<p id="time"></p>
+	<button type="button" onclick="time()">What Time Is It?</button><br><br>
+
+	<p>String Location Example...</p>
+	<p id="pos"></p><br>
+
+	<p>Cartoons....</p>
+	<p id="cn"></p><br>
+
+	<p>Cartoons....</p>
+	<p id="cn1"></p><br>
+	<p id="cn2"></p><br>
+	<p id="cn3"></p><br>
+	<p id="cn4"></p><br>
+	<p id="cn5"></p><br>
+	<p id="cn6"></p><br>
+	<p id="cn6"></p><br><br>
+
+
+	<p>Person's Details....</p>
+	<p id="person"></p>
+	<p id="person1"></p><br>
+
+	<p>Enter Number Between 1 and 10:</p>
+	<input id="num">
+	<button type="button" onclick="numvalid()">Submit</button>
+	<p id="number"></p>
+
+
+	<form>
+		<input type="button" value="Submit" onclick="display()"/>
+	</form>
+
+
+	<script src="new.js">
+		</script>
+	<script>
+		var str = "A QUICK BROWN FOX JUMPS OVER THE LAZY DOG!";
+		var position = str.indexOf("FOX");
+		document.getElementById("pos").innerHTML = position;
+
+		var cartoons = ["Ben10", "Pokemon", "BeyBlade","Doremon","NinjaHatori"];
+		document.getElementById("cn").innerHTML = cartoons[0];
+		cartoons[4] = "Sinchen";
+		document.getElementById("cn1").innerHTML = cartoons;
+
+		document.getElementById("cn2").innerHTML = cartoons;
+		document.getElementById("cn3").innerHTML = cartoons.pop();
+		document.getElementById("cn4").innerHTML = cartoons;
+
+		document.getElementById("cn5").innerHTML = cartoons;
+		document.getElementById("cn6").innerHTML = cartoons.push("Sinchen");
+		document.getElementById("cn7").innerHTML = cartoons;
+
+		var person = ["Parth", "Patel", 23];
+		document.getElementById("person").innerHTML = person;
+		document.getElementById("person1").innerHTML = person.length;
+	</script>
+	</body>
+	</html>
